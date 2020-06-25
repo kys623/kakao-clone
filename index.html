@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -16,85 +15,76 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span class="status-bar__clock">13:54 </span>
+        <span class="status-bar__time">13:53</span>
       </div>
       <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-ban"></i>
+        <span class="status-bar__battery-level">35%</span>
+        <div class="fas fa-battery-three-quarters"></div>
       </div>
     </div>
     <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Chats</h1>
+      <div class="header__column">
+        <div class="header__title">Chats</div>
       </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="far fa-comment"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
+      <div class="header__column">
+        <div class="header__icons">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="far fa-comment"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
       </div>
     </header>
     <main class="chats">
-      <ul class="chats__list">
-        <li class="chats__chat chat">
-          <a href="chat.html">
-            <div class="chats__chat friend friend--lg">
-              <div class="friend__column">
-                <img src="images/avatar.jpg" class="m-avatar friend__avatar" />
-                <div class="friend__content">
-                  <span class="friend__name">
-                    Lynn
-                  </span>
-                  <span class="friend__bottom-text">
-                    Going home!
-                  </span>
-                </div>
-              </div>
-              <div class="friend__column">
-                <span class="chat__timestamp">
-                  March 8
-                </span>
-              </div>
+      <div class="chats__list">
+        <a href="chat.html" class="chats__list-link">
+          <div class="friend__column">
+            <img src="images/avatar.jpg" alt="profile image" class="friends__friend friend g-friend" />
+            <div class="friend__content">
+              <div class="friend__name">Lynn</div>
+              <span class="friend__preview">Going home!</span>
             </div>
-          </a>
-        </li>
-      </ul>
+          </div>
+          <div class="chats__column">
+            <span class="chats__timestamp">Yesterday</span>
+          </div>
+        </a>
+      </div>
     </main>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i
-          ></a>
-        </li>
-        <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <div class="nav__badge">8</div>
-            <i class="fas fa-comment"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="find.html" class="nav__list-link">
+    <nav class="nav-bar">
+      <ul class="nav-bar__list">
+        <a href="friends.html" class="nav-bar__list-link">
+          <li class="nav-bar__icon">
+            <i class="far fa-user"></i>
+          </li>
+        </a>
+        <a href="index.html" class="nav-bar__list-link">
+          <li class="nav-bar__icon">
+            <i class="fas fa-comment">
+              <div class="nav-bar__badge">8</div>
+            </i>
+          </li>
+        </a>
+        <a href="find.html" class="nav-bar__list-link">
+          <li class="nav-bar__icon">
             <i class="fas fa-search"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link">
+          </li>
+        </a>
+        <a href="more.html" class="nav-bar__list-link">
+          <li class="nav-bar__icon">
             <i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
+          </li>
+        </a>
       </ul>
     </nav>
-    <div class="bigScreen">
-      <span class="bigScreen__text">Please make your screen small!</span>
-    </div>
   </body>
 </html>

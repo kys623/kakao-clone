@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -16,108 +15,117 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span class="status-bar__clock">13:54 </span>
+        <span class="status-bar__time">13:53</span>
       </div>
       <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
+        <span class="status-bar__icon">
+          <i class="fas fa-clock"></i>
+        </span>
+        <span class="status-bar__icon">
+          <i class="fas fa-volume-mute"></i>
+        </span>
+        <span class="status-bar__icon">
+          <i class="fas fa-wifi"></i>
+        </span>
+        <span class="status-bar__icon">
+          <i class="fas fa-ban"></i>
+        </span>
+        <span class="status-bar__icon">
+          <span class="status-bar__battery-level">35%</span>
+        </span>
+        <span class="status-bar__icon">
+          <i class="fas fa-battery-three-quarters"></i>
+        </span>
       </div>
     </div>
     <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Friends</h1>
+      <div class="header__column">
+        <div class="header__title">Friends</div>
       </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
+      <div class="header__column">
+        <div class="header__icons">
+          <span class="header__icon">
+            <i class="far fa-comment"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
       </div>
     </header>
     <main class="friends">
-      <header class="friends__header">
-        <div class="friends__friend friend">
-          <div class="friend__column">
-            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
-            <div class="friend__content">
-              <span class="friend__name">
-                Nicolás Serrano
-              </span>
-              <span class="friend__status">
-                nomadcoders.co
-              </span>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="friends__plus">
-        <h5 class="friends__title">Plus friend</h5>
-        <div class="friends__friend friend">
-          <div class="friend__column">
-            <img src="images/avatar.jpg" class="friend__avatar" />
-            <div class="friend__content">
-              <span class="friend__name">
-                Plus Friend
-              </span>
-            </div>
+      <div class="Friends__friend">
+        <div class="friends__column">
+          <img src="images/avatar.jpg" alt="profile image" class="friends__friend friend g-friend" />
+          <div class="friend__content">
+            <div class="friend__name">Kim Yeonsan</div>
+            <span class="friend__email">dustks623@naver.com</span>
           </div>
         </div>
       </div>
-      <ul class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
-        <li class="friends__friend friend friend--lg">
-          <div class="friend__column">
-            <img src="images/avatar.jpg" class="friend__avatar" />
-            <div class="friend__content">
-              <span class="friend__name"> Nicolás Serrano </span>
-              <span class="friend__status">
-                nomadcoders.co
-              </span>
-            </div>
+      <div class="friends__friend-plus">
+        <div class="friends__title">Plus Friend</div>
+        <div class="friends__column">
+          <img src="images/avatar.jpg" alt="profile image" class="friends__friend friend g-friend" />
+          <div class="friend__content">
+            <div class="friend__name">Plus Friend</div>
           </div>
-          <div class="friend__column">
-            <div class="friend__now-listening">
-              <span>
-                FTISLAND (FT NomadCoders)
-                <i class="fas fa-play"></i>
-              </span>
-            </div>
+        </div>
+      </div>
+      <div class="Friends__friend">
+        <div class="friends__title">Friends 3</div>
+        <div class="friends__column">
+          <img src="images/avatar.jpg" alt="profile image" class="friends__friend friend g-friend" />
+          <div class="friend__content">
+            <div class="friend__name">Kim Yeonsan</div>
+            <span class="friend__preview">Time waits for no one</span>
           </div>
-        </li>
-      </ul>
+          <div class="friends__nowlistening">
+            <span class="friends__nowlistening-name">FTISLAND - 지독하게</span>
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="friends__column">
+          <img src="images/avatar.jpg" alt="profile image" class="friends__friend friend g-friend" />
+          <div class="friend__content">
+            <div class="friend__name">Kim Yeonsan</div>
+            <span class="friend__preview">Every wall is door</span>
+          </div>
+        </div>
+        <div class="friends__column">
+          <img src="images/avatar.jpg" alt="profile image" class="friends__friend friend g-friend" />
+          <div class="friend__content">
+            <div class="friend__name">Kim Yeonsan</div>
+            <span class="friend__preview">No pain No gain</span>
+          </div>
+        </div>
+      </div>
     </main>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="fas fa-user"></i
-          ></a>
-        </li>
-        <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <i class="far fa-comment"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="find.html" class="nav__list-link">
+    <nav class="nav-bar">
+      <ul class="nav-bar__list">
+        <a href="friends.html" class="nav-bar__list-link">
+          <li class="nav-bar__icon">
+            <i class="fas fa-user"></i>
+          </li>
+        </a>
+        <a href="index.html" class="nav-bar__list-link">
+          <li class="nav-bar__icon">
+            <i class="fas fa-comment">
+              <div class="nav-bar__badge">8</div>
+            </i>
+          </li>
+        </a>
+        <a href="find.html" class="nav-bar__list-link">
+          <li class="nav-bar__icon">
             <i class="fas fa-search"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link">
+          </li>
+        </a>
+        <a href="more.html" class="nav-bar__list-link">
+          <li class="nav-bar__icon">
             <i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
+          </li>
+        </a>
       </ul>
     </nav>
-    <div class="bigScreen">
-      <span class="bigScreen__text">Please make your screen small!</span>
-    </div>
   </body>
 </html>

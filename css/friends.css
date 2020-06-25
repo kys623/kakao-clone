@@ -1,13 +1,33 @@
-.friends .friends__plus {
-  padding: 20px 0px;
-  border-top: 1px solid #f7f7f7;
-  border-bottom: 1px solid #f7f7f7;
-  margin: 20px 0px;
+.friends__column {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.friends__plus .friends__title,
-.friends__list .friends__title {
-  font-size: 14px;
+.friend__email {
+  font-size: 12px;
   opacity: 0.6;
-  margin-bottom: 12px;
+}
+
+.friends__title {
+  font-size: 12px;
+  opacity: 0.6;
+  padding: 15px 0;
+}
+
+.friends__friend-plus {
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.friends__nowlistening {
+  float: right;
+  border: 1px solid #2cc459;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 10px;
+}
+
+.friends__nowlistening .fa-play {
+  color: #2cc459;
 }

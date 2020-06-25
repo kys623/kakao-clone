@@ -1,3 +1,3 @@
 # kakao-clone
 
-Kakao Clone 1st version
+Kakao Clone Practice 1st version

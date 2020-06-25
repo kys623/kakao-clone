@@ -1,0 +1,8 @@
+class를 주는 게 미숙했다.
+ 전체적인 구조를 짜는 것이 너무 미숙했다.
+
+position과 display에 대한 이해도와 숙련도가 떨어짐. 자주 사용해봐야 함.
+
+box-shadow를 전혀 안 써봤네.
+
+? friends__nowlistening에 float: right를 적용했는데 왜 안 될까?
