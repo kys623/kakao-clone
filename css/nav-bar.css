@@ -1,52 +1,26 @@
-.nav {
+.nav-list {
   position: fixed;
   width: 100%;
-  background-color: #fcfcfc;
-  padding: 20px 50px;
-  left: 0px;
-  bottom: 0px;
-  border-top: 1px solid #f7f7f7;
-}
-
-.nav .nav__list {
+  bottom: 0;
+  left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 20px 0 20px 0;
+  font-size: 22px;
+  background-color: #fcfcfc;
 }
 
-.nav i {
-  font-size: 20px;
-}
-
-.nav .nav__list-link {
+.nav-list_link {
   position: relative;
 }
 
-.nav .nav__badge {
+.nav .chats__badge {
   position: absolute;
-  top: -7px;
-  right: -7px;
+  top: -4px;
+  left: 12px;
+  padding: 4px 6px;
+  border-radius: 25px;
+  background-color: #e65f3f;
   font-size: 10px;
   color: white;
-  background-color: #dc5d46;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-@keyframes showNavBar {
-  from {
-    transform: translateY(80px);
-  }
-  to {
-    transform: none;
-  }
-}
-
-.nav {
-  transform: translateY(80px);
-  animation: showNavBar 0.5s ease-out forwards;
-  animation-delay: 0.5s;
 }

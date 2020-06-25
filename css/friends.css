@@ -1,13 +1,35 @@
-.friends .friends__plus {
-  padding: 20px 0px;
-  border-top: 1px solid #f7f7f7;
-  border-bottom: 1px solid #f7f7f7;
-  margin: 20px 0px;
+.friends__body .friend__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.friends__plus .friends__title,
-.friends__list .friends__title {
-  font-size: 14px;
+.user__column {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fbfbfb;
+}
+
+.user__column img {
+  width: 60px;
+  border-radius: 25px;
+}
+
+.friend__plus {
+  /* margin: 15px 0; */
+  padding: 20px 0;
+  border-bottom: 1px solid #fbfbfb;
+}
+
+main h6 {
   opacity: 0.6;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.friend__column span {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.friends__list h6 {
+  padding-top: 15px;
 }

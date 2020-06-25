@@ -1,3 +1,3 @@
 # kakao-clone
 
-Kakao Clone End version(by.nico)
+Kakao Clone Practice 2nd version

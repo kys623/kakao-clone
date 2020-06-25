@@ -1,27 +1,25 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
+  padding: 20px 0 25px 0;
+  font-size: 23px;
+  font-weight: 700;
 }
 
-.header .header__title {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.header .header__icon {
-  font-size: 20px;
+.header__icon i {
   margin-left: 20px;
-  cursor: pointer;
 }
 
-.header .header__header-column {
+.header__column {
   display: flex;
   align-items: center;
 }
 
-.header .header__back-btn {
-  font-size: 22px;
-  margin-right: 20px;
+.friend__column .friend__add-btn {
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+}
+
+.header__back-btn {
+  padding-right: 15px;
 }

@@ -1,0 +1,9 @@
+? .friend__content를 flex 적용하고 column 방향으로 해서 space-evenly를 적용했다.
+
+? find__body-title에 h 태그가 적용이 안된다.
+
+? chat__status-bar에서 fixed에 width 100%를 넣으니까 오른쪽 끝으로 튀어나가버리네.
+
+? chatBg를 background-image로 넣을 때 url에 왜 ../을 앞에 넣어줘야만 제대로 되지?
+
+? chat에서 input에 transition을 주지 않고 니코, 최종완료본 기준으로 chat__write-container에다가 줬는데 transform이 안 되더라고. 왜 그럴까?

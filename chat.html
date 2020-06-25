@@ -3,107 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+    <script src="https://kit.fontawesome.com/d8d5195c1c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Chat | Kakao Clone</title>
+    <title>Chat | Kakao clone</title>
   </head>
-  <body class="chats-body">
-    <div class="header-wrapper">
-      <div class="status-bar">
-        <div class="status-bar__column">
-          <span class="status-bar__clock">13:54</span>
-        </div>
-        <div class="status-bar__column">
+  <body class="chatBg">
+    <div class="chat__status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__timestamp">13:53</span>
+      </div>
+      <div class="status-bar__column">
+        <div class="status-bar__icon">
           <i class="fas fa-clock"></i>
           <i class="fas fa-volume-mute"></i>
           <i class="fas fa-wifi"></i>
+          <i class="fas fa-ban"></i>
           <span class="status-bar__battery-level">100%</span>
           <i class="fas fa-battery-full"></i>
         </div>
       </div>
-      <header class="header">
-        <div class="header__header-column">
-          <a href="index.html" class="header__back-btn">
+    </div>
+    <header class="chat__header">
+      <div class="header__column">
+        <div class="header__back-btn">
+          <a href="index.html">
             <i class="fas fa-arrow-left"></i>
           </a>
-          <h1 class="header__title">Best Friend</h1>
         </div>
-        <div class="header__header-column">
-          <span class="header__icon">
-            <i class="fas fa-search"></i>
+        <div class="header__title">Best Friend</div>
+      </div>
+      <div class="header__column">
+        <div class="header__icon">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <main class="chat__body">
+      <div class="chat__timestamp">
+        Friday, January 11, 2019
+      </div>
+      <div class="chat__messages">
+        <div class="incomingMessage message">
+          <img src="images/avatar.jpg" alt="user_image" class="incoming-image" />
+          <div class="incomingMessage__column">
+            <div class="incomingMessage-name">
+              Best Friend
+            </div>
+            <span class="incomingMessage-content">
+              Congrats a lot! I'm glad to see you!
+            </span>
+          </div>
+        </div>
+        <div class="sentMessage message">
+          <div class="sentMessage-content">
+            Thanks a lot!
+          </div>
+        </div>
+        <div class="incomingMessage message">
+          <img src="images/avatar.jpg" alt="user_image" class="incoming-image" />
+          <div class="incomingMessage__column">
+            <div class="incomingMessage-name">
+              Best Friend
+            </div>
+            <span class="incomingMessage-content">
+              See you again~
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="chat__write">
+        <div class="chat__write-iconLeft">
+          <div class="chat__write-icon">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <input type="text" class="chat__write-input" placeholder="Input message" />
+        <div class="chat__write-iconRight">
+          <span class="chat__write-icon">
+            <i class="far fa-smile"></i>
           </span>
-          <span class="header__icon">
-            <i class="fas fa-bars"></i>
+          <span class="chat__write-icon">
+            <i class="fas fa-microphone"></i>
           </span>
         </div>
-      </header>
-    </div>
-    <main class="chat-screen">
-      <ul class="chat__messages">
-        <span class="chat__timestamp">Friday, January 11, 2019</span>
-        <li class="incoming-message message">
-          <img src="images/avatar.jpg" class="m-avatar message__avatar" />
-          <div class="message__content">
-            <span class="message__bubble">
-              Congrats I love you!
-            </span>
-            <span class="message__author">Best Friend</span>
-          </div>
-        </li>
-        <li class="sent-message message">
-          <div class="message__content">
-            <span class="message__bubble">
-              Thank you see you soon!
-            </span>
-          </div>
-        </li>
-        <li class="incoming-message message">
-          <img src="images/avatar.jpg" class="m-avatar message__avatar" />
-          <div class="message__content">
-            <span class="message__bubble">
-              Congrats I love you!
-            </span>
-            <span class="message__author">Best Friend</span>
-          </div>
-        </li>
-        <li class="sent-message message">
-          <div class="message__content">
-            <span class="message__bubble">
-              Thank you see you soon!
-            </span>
-          </div>
-        </li>
-      </ul>
+      </div>
     </main>
-    <div class="chat__write--container">
-      <input
-        type="text"
-        class="chat__write"
-        placeholder="Send message"
-        class="chat__write-input"
-      />
-
-      <div class="chat__icon-left chat__icon">
-        <i class="far fa-plus-square"></i>
-      </div>
-
-      <div class="chat__icon-right chat__icon">
-        <span class="chat__write-icon">
-          <i class="far fa-smile-wink"></i>
-        </span>
-        <span class="chat__write-icon">
-          <i class="fas fa-microphone"></i>
-        </span>
-      </div>
-    </div>
-    <div class="bigScreen">
-      <span class="bigScreen__text">Please make your screen small!</span>
+    <div class="bigSize">
+      <span class="bigSize__text">
+        Please make your screen small!
+      </span>
     </div>
   </body>
 </html>
