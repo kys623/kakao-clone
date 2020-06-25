@@ -1,3 +1,3 @@
 # kakao-clone
 
-Kakao Desktop App Clone
+Kakao Clone End version(by.nico)
