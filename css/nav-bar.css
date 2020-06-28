@@ -1,0 +1,25 @@
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 20px 0;
+  font-size: 23px;
+  background-color: #fcfcfc;
+}
+
+.nav-icon {
+  position: relative;
+}
+
+.chat__badge {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  background-color: #e26141;
+  color: white;
+  font-size: 11px;
+  padding: 3px 5px;
+  border-radius: 100%;
+}

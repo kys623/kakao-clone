@@ -1,0 +1,30 @@
+.more__suggestions-icons {
+  border-top: 1px solid #fafafa;
+  padding-top: 20px;
+}
+
+.more__header-icons {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin: 15px 0 20px 0;
+}
+
+.more__header-icons:first-child {
+  margin-top: 30px;
+}
+
+.find__friend {
+  margin-bottom: 30px;
+}
+
+.more__header-icon {
+  display: table-cell;
+  text-align: center;
+}
+
+.more__header-icon i {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 20px;
+}

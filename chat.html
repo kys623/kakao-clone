@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chat | Kakao Clone</title>
+  </head>
+  <body class="chat">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__timestamp">
+          13:54
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <div class="status-bar__icons">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__batteryLevel">
+            100%
+          </span>
+          <i class="fas fa-battery-full"></i>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__column">
+        <div class="back-btn">
+          <a href="index.html">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+        <div class="header__title">
+          Best Friend
+        </div>
+      </div>
+      <div class="header__column">
+        <div class="header__icons">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <main class="chat__body">
+      <div class="chat__timestamp">
+        Friday, January 11, 2019
+      </div>
+      <div class="chat__messages">
+        <div class="incoming__message message">
+          <img src="images/avatar.jpg" alt="profile" />
+          <div class="incoming__message-content">
+            <span class="incoming__message-name">
+              Best Friend
+            </span>
+            <span class="incoming__message-text">
+              Congrats a lot!
+            </span>
+          </div>
+        </div>
+        <div class="sent__message message">
+          Thanks a lot!
+        </div>
+        <div class="incoming__message message">
+          <img src="images/avatar.jpg" alt="profile" />
+          <div class="incoming__message-content">
+            <span class="incoming__message-name">
+              Best Friend
+            </span>
+            <span class="incoming__message-text">
+              See you~.
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="chat__write-container">
+      <div class="chat__write-iconLeft">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <input class="chat__write" type="text" placeholder="Send message" />
+      <div class="chat__write-iconRight">
+        <i class="far fa-smile"></i>
+        <i class="fas fa-microphone"></i>
+      </div>
+    </div>
+  </body>
+</html>

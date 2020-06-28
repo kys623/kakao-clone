@@ -1,0 +1,7 @@
+.chats__list {
+  margin-top: 10px;
+}
+
+.chats__body .chats__chat {
+  margin-bottom: 30px !important;
+}

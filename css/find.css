@@ -1,0 +1,17 @@
+.find__header-icons {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin: 40px 0 25px 0;
+}
+
+.find__header-icon {
+  display: table-cell;
+  text-align: center;
+}
+
+.find__header-icon i {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 20px;
+}

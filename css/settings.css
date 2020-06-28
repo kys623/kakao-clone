@@ -1,0 +1,14 @@
+.settings__list {
+  border-top: 1px solid #f3f3f3;
+}
+
+.settings__item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.settings__item i {
+  padding-right: 15px;
+  font-size: 20px;
+}
