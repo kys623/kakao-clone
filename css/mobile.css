@@ -1,0 +1,12 @@
+.bigScreen {
+  width: 100vw;
+  height: 100vh;
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+  z-index: 3;
+}
+
+@media screen and (max-width: 550px) {
+  display: flex;
+}

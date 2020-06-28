@@ -8,6 +8,7 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
+@import "mobile.css";
 
 body {
   padding: 25px 15px 0 15px;

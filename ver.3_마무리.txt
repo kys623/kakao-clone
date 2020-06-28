@@ -63,6 +63,7 @@ chat의 프로필이 작은 사이즈, 리스트의 프로필이 보통, Friends
  ? 아 문제가 뭔지 알았다. chat__write-container 안에 chat__write도 포함되어 있는데 opacity: 0;을 주니까 안 되는 거였어.(transform이 우선이라 opacity가 적용이 안된 건가?)
   ? 흠.. 아이콘까지는 투명하게 만들겠는데 container의 배경색이 그대로 남네.
 
+? 미디어쿼리를 적용해봤는데 화면에 꽉 차게 만드는 게 안 되네.
 
 
 
