@@ -15,30 +15,75 @@
 }
 
 .message {
-  margin: 15px;
+  margin-bottom: 15px;
+}
+
+@keyframes showLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .incoming__message {
   align-self: flex-start;
   display: flex;
   align-items: center;
+  animation: showLeft 0.5s ease-in-out forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(1turn);
+  }
+  to {
+    transform: none;
+  }
 }
 
 .incoming__message img {
   width: 50px;
-  border-radius: 20px;
+  border-radius: 22px;
   margin-right: 15px;
+  animation: spin 1.5s linear infinite;
 }
 
-.incoming__message-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@keyframes showRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .sent__message {
   align-self: flex-end;
-  background-color: ;
+  padding: 8px;
+  border-radius: 12px;
+  border-bottom-right-radius: 0;
+  background-image: linear-gradient(to right, #800080, #ffc0cb);
+  animation: showRight 0.5s ease-in-out forwards;
+}
+
+.incoming__message-name {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.incoming__message-text {
+  display: block;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+  background-image: linear-gradient(to right, #00f260, #0575e6);
 }
 
 .chat__write-container {
@@ -56,12 +101,32 @@
 
 .chat__write {
   width: 80%;
-  padding: 15px 0;
+  padding: 15px 5px;
   border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.chat__write:focus {
+  outline: none;
+  transform: translateY(-150px);
+  border-radius: 20px;
+}
+
+.chat__write-icon {
+  background-color: white;
+}
+
+.chat__write:focus .chat__write:focus ~ .chat__write-icon {
+  opacity: 0;
 }
 
 .chat__write-container i {
   font-size: 25px;
+  opacity: 0.5;
+}
+
+.chat__write-iconLeft {
+  order: -1;
 }
 
 .chat__write-iconRight .fa-smile {

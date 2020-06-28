@@ -1,0 +1,142 @@
+html
+ head
+  link
+  title
+body
+ header
+ main ( 리스트, 목록)
+	대부분이 나열되는 게 많으니까 ul 태그를 써서 정리해야겠다.
+	이름만 좀 다르게 해서 체계적으로 관리해야징.
+ 	friend : 전체- column 2개 - 1개 콜럼 안에 class 2개(img랑 이름, 텍스트) - 
+
+HTML 설계
+? 프로필 이미지가 조금 큰 사이즈랑 보통 사이즈, 조금 작은 사이즈 이렇게 3종류가 있네. 
+chat의 프로필이 작은 사이즈, 리스트의 프로필이 보통, Friends나 Find의 유저 프로필이 조금 큰 사이즈.
+그럼 class를 전역 클래스를 넣어주고 사이즈 크기별로 이름을 다르게 하면 되겠네.
+
+
+
+? 왜 header에다가 class로 header를 주고 nav에다가 nav를 또다시 class로 주는 걸까?
+
+? chats에서 채팅방을 만들 때 'li.chats__chat chat'을 줬는데 이거는 다른 곳에서도 많이 쓰잖아. friend로 class 줘서 만들려는데 뭔가 겹치는 것 같단 말이지. 전체 1칸이...
+
+? chat에서 chat__write를 main 말고 body에다가 넣었는데 어떠려나.
+
+<CSS>
+? status-bar에서 fixed를 주고 너비를 100%로 맞추고 좌우 padding 값을 주면 항상 오른쪽이 잘렸는데 그게 왜 그런지 알아냈다.
+ ? 뭐가 문제냐면 left값을 0으로 주고 있는 게 문제였어. 왼쪽에 패딩을 포함해서 정확하게 붙어있는데 그만큼 넓이가 100%니까 좌측 패딩값만큼 오른쪽이 잘려버리는 거야.
+  ? 이걸 해결하려면 너비를 살짝 줄여주는 수밖에는 없는 건가?
+   !? 오 해냈다. 좌우 패딩값을 2%로 주고 width를 96%로 맞추니까 깔끔하게 나오네. 다만 뷰어 사이즈에 따라 변동이 생기니까..
+    ? width 설정에서 100% - 30px 이런 거 가능한가?
+     ! 와 세상에 있더라. calc라는 함수가 있었어. width:calc(% - px);하면 되더라.
+
+? 어라? nav-bar에 badge를 위치 설정하려는데 잘 안되네? absolute를 쓰기는 쓰는데 부모 요소에 relative를 줬었던가?
+ !? 일단 nav-icon에 relative를 주니까 해결이 됐다. 니코는 이걸 어떻게 했었더라?
+
+? friend에서 content 안에 name이랑 preview를 2줄로 나누는 걸 분명 display: block으로 해결했었던 것 같은데 이번에는 잘 안되서 flex-direction을 column으로 주고 2줄로 맞췄다.
+ ? 아 friend__content에다 flex를 줘버려서 display:block이 적용이 안 되었던 것 같다.
+
+? chats__list에 margin-top: 10px가 적용이 안 되네.
+
+? find에서 list__title을 h5 태그로 했는데 또 적용이 안 되네. h1을 해봐도 안 되는 걸 보면 뭔가 있다 싶은데 밑에 friend__name이랑 크기가 똑같은 거 보면 그쪽에서 영향을 받고 있나보네. 아니네.. 뭐지?
+ ! 찾았다. reset.css에서 font 설정이 있네. 거기에 적용이 된 거였어.
+
+? friend를 아래로 나열할 때 간격이 중요하잖아. 그래서 간격을 넣어줬는데 friend 클래스에 적용하면 잘 되는데 chats에서 chats__chat chat friend로 클래스 3개를 준 녀석은 chats__chat으로 지정해줘도 변화가 없네.
+ ? 이미 friend의 영향을 받고 있어서 우선순위가 떨어지는 chats__chat은 영향을 끼치지 못하는 건가?
+  ? chats__chat에서 margin-bottom: 30px !important;를 넣어봤는데 안 되네.
+
+? more에서 아이콘 목록이 비슷하니까 그걸 같은 클래스를 지정해서 똑같이 맞췄는데 문제는 위의 거랑 아래에 있는 거랑 위아래 여백 크기가 다르네.
+ ? 위의 거에 first-child로 margin-top 값을 새로 줬는데 적용이 안 돼. 아무래도 내가 적용을 잘못한 것 같네.
+  !? 하는 수 없이 위의 friend에 새로 클래스 주고 margin-bottom 값을 주니까 되기는 되네.
+   ? 크래스가 여러 개일 때 지정하는 방법을 알아야 해.
+
+? settings에서 목록에 각 항목을 세로로 가운데에 맞추는 게 뭔가 쉽지 않네.
+ ! 생각해보니까 그냥 정렬시키려는 녀석들 부모 태그에 바로 flex에 align-items: center; 하면 되네.
+
+? chat__timestamp를 가운데 정렬시킬 때 text-align: center; 말고 그냥 padding 좌우값을 auto로 줘서 해결해보려고 했거든? 근데 안 되네. padding은 auto가 없다네.
+ ? 그래서 margin 좌우값을 auto로 해봤는데 미동도 안 하네; auto에 대해서 좀 더 자세히 알아봐야 해.
+  ?! auto는 좌우의 여백을 똑같이 배분하는 거라고 하네.
+
+? chat에서 friend 클래스를 넣는 걸 소홀히 했네. 일단 직접 다시 짜야겠다.
+
+? chat__write 클릭하면 input만 위로 올라오고 나머지 chat__write-container는 전부 사라지게 만들려는데 잘 안 되네?
+ ? 아 문제가 뭔지 알았다. chat__write-container 안에 chat__write도 포함되어 있는데 opacity: 0;을 주니까 안 되는 거였어.(transform이 우선이라 opacity가 적용이 안된 건가?)
+  ? 흠.. 아이콘까지는 투명하게 만들겠는데 container의 배경색이 그대로 남네.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 
