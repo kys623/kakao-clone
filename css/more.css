@@ -1,50 +1,49 @@
-.more .more__btn-list,
-.more .more__suggestions-list {
-  margin: 30px 0px;
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
+.more {
+  margin-top: 97.4px;
 }
 
-.more__btn-list .more__btn,
-.more .suggestion {
-  margin-right: 40px;
+.more .friend {
+  margin-bottom: 28px;
+}
+
+.more .image-lg {
+  width: 60px;
+  height: 60px;
+  border-radius: 28px;
+}
+
+.more i {
+  font-size: 25px;
+}
+
+.more .list__title {
+  margin: 20px 0 15px 0;
+  padding-top: 20px;
+  font-weight: 800;
+  border-top: 1px solid #f9f9f9;
+}
+
+.more .icons__list-items {
+  display: flex;
+}
+
+.more .icons__list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
+  margin-right: 53px;
 }
 
-.more__btn .more__btn-title {
-  font-size: 14px;
-  margin-top: 15px;
+.more .icons__list:last-child .icons__list-item {
+  margin-right: 20px;
 }
 
-.more .more__suggestions {
-  border-top: 1px solid #f7f7f7;
-  padding-top: 20px;
+.more .icons__list-item i {
+  margin-bottom: 10px;
 }
 
-.more .more__title {
-  opacity: 0.8;
-  margin-bottom: 20px;
-}
-
-.suggestion .suggestion__title {
-  font-size: 12px;
-  margin-top: 15px;
-}
-
-.suggestion .suggestion__icon {
-  background-color: #fce006;
+.more .icons__list:last-child i {
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
-}
-
-.suggestion__icon i {
-  font-size: 28px;
-  color: white;
+  background-color: #fae100;
 }

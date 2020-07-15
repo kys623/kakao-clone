@@ -1,27 +1,40 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.header__column {
+  display: flex;
+  align-items: center;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 21px;
+  opacity: 0.6;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
+  padding: 18px;
+  font-size: 25px;
 }
 
-.header .header__title {
-  font-size: 24px;
-  font-weight: 600;
+.header__title {
+  font-weight: 800;
+  font-family: "Open Sans";
 }
 
-.header .header__icon {
-  font-size: 20px;
-  margin-left: 20px;
-  cursor: pointer;
+.header__icons i {
+  margin-left: 18px;
 }
 
-.header .header__header-column {
-  display: flex;
-  align-items: center;
-}
-
-.header .header__back-btn {
-  font-size: 22px;
-  margin-right: 20px;
+.header .back-btn {
+  margin-right: 15px;
 }

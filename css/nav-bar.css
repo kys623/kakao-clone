@@ -1,52 +1,44 @@
 .nav {
   position: fixed;
   width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
   background-color: #fcfcfc;
-  padding: 20px 50px;
-  left: 0px;
-  bottom: 0px;
-  border-top: 1px solid #f7f7f7;
+  animation: showNav 0.5s ease-out forwards;
+  animation-delay: 0.5s;
 }
 
-.nav .nav__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav i {
-  font-size: 20px;
-}
-
-.nav .nav__list-link {
-  position: relative;
-}
-
-.nav .nav__badge {
-  position: absolute;
-  top: -7px;
-  right: -7px;
-  font-size: 10px;
-  color: white;
-  background-color: #dc5d46;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-@keyframes showNavBar {
+@keyframes showNav {
   from {
-    transform: translateY(80px);
+    transform: translateY(100px);
   }
   to {
     transform: none;
   }
 }
 
-.nav {
-  transform: translateY(80px);
-  animation: showNavBar 0.5s ease-out forwards;
-  animation-delay: 0.5s;
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+.nav .fa-comment {
+  position: relative;
+}
+
+.nav .chat__badge {
+  position: absolute;
+  top: -7px;
+  left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #e46040;
+  padding: 3px 5px;
+  border-radius: 50%;
+  color: white;
 }

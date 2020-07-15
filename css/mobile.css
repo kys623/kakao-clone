@@ -4,21 +4,17 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #fce006;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 600;
-  color: white;
-  font-size: 28px;
-  text-align: center;
-  line-height: 1.5;
-  padding: 0px 20px;
+  background-color: firebrick;
+  font-size: 30px;
+  font-weight: 800;
   display: none;
-  z-index: 4;
+  z-index: 2;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) {
   .bigScreen {
     display: flex;
   }
